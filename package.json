@@ -1,0 +1,35 @@
+{
+  "name": "sheet-advisor",
+  "version": "1.0.0",
+  "description": "AI-powered portfolio monitoring system built on Google Sheets and Apps Script. Fetches daily prices, runs Claude AI analysis, writes results to your Sheet, and emails you a daily summary and weekly digest.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build-strategy": "node scripts/build-strategy.js",
+    "push": "npm run build-strategy && clasp push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmignano/sheet-advisor.git"
+  },
+  "keywords": [
+    "portfolio",
+    "investing",
+    "google-sheets",
+    "apps-script",
+    "claude",
+    "ai"
+  ],
+  "author": "You can just ship things, LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmignano/sheet-advisor/issues"
+  },
+  "homepage": "https://github.com/mmignano/sheet-advisor#readme",
+  "dependencies": {
+    "@google/clasp": "^3.3.0"
+  }
+}
